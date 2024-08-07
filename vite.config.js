@@ -11,7 +11,9 @@ export default defineConfig({
     },
   },
   plugins: [
-    Components(),
+    Components({
+      dts: false,
+    }),
     vue(),
     svgLoader({
       svgoConfig: {
